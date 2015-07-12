@@ -71,3 +71,7 @@ func ptsname(f *os.File) (string, error) {
 	}
 	return "", errors.New("FIODGNAME string not NUL-terminated")
 }
+
+func setsize(f *os.File, rows uint16, cols uint16) error {
+	return ErrUnsupported
+}
